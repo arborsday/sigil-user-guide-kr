@@ -8,76 +8,77 @@
 </head>
 
 <body>
-  <h2>A Quick Introduction To Code View</h2>
+  <h2>코드 보기에 대한 간단한 소개</h2>
 
-  <h3 class="sigil_not_in_toc">Code View</h3>
+  <h3 class="sigil_not_in_toc">코드 보기</h3>
 
-  <p>That’s quite a lot of text, but it’s not as jumbled as it appears. First, ignore everything at the top of the file up to and including the <span class="example">&lt;body&gt;</span> tag on line 11 in this example. The “header” is just information required by HTML files and not something you normally need to change.</p>
+  <p>꽤 많은 양의 글자가 쓰여있지만, 보이는 것처럼 뒤죽박죽이지는 않습니다. 우선, 11행의 <span class="example">&lt;body&gt;</span> 태그를 포함하여 그 위로 보이는 모든 내용은 무시하셔도 됩니다. <heaader> 태그 내에 써있는 내용들은 HTML 파일에 필요한 정보일 뿐, 일반적으로 변경되어야 하는 부분은 아닙니다.</p>
 
-  <p>Your text starts after the <span class="example">&lt;body&gt;</span> tag:</p>
+  <p>여러분의 원고는 <span class="example">&lt;body&gt;</span> 태그 뒤부터 시작됩니다.</p>
 
   <div class="image">
-    <img alt="The main Code View Window" src="../Images/tutorial-cv.png"/>
+    <img alt="코드 보기 창" src="../Images/tutorial-cv.png"/>
   </div>
 
-  <p>You can see all the same words that are shown in Preview – the chapter name “Introduction” and several paragraphs of text. But you can also see the HTML code tags that tell readers how to display that text.</p>
+  <p>코드 보기에서는 미리보기 창에 표시된 단어들과 동일한 단어들을 보실 수 있는데요. 즉 "서론"이나 여러 글자 문단을 볼 수 있습니다. 그러나 리더기에게 해당 글자들을 구현하는 방법을 알려주는 HTML 태그들도 함께 볼 수 있습니다.</p>
 
-  <h3 class="sigil_not_in_toc">HTML Basics</h3>
+  <h3 class="sigil_not_in_toc">HTML 기초</h3>
 
-  <p>A full description of HTML is beyond this tutorial, but understanding the basics will help you edit your text.<a href="#section1">[1]</a></p>
+  <p>HTML에 대한 전체 설명은 이 튜토리얼에서는 포함하지 않았지만, 아래의 기초적인 내용들은 여러분이 원고를 편집하는데 도움이 될 것입니다.<a href="#section1">[1]</a></p>
 
-  <p>If you look at the HTML version of your file in Code View you will see lots of words like <span class="example">&lt;p&gt;</span> or <span class="example">&lt;h1&gt;</span>, etc. These are the HTML tags that tell e-readers what to do with your text.</p>
+  <p>코드 보기에서 파일의 HTML 버전을 보면 <span class="example">&lt;p&gt;</span>나 <span class="example">&lt;h1&gt;</span> 등과 같은 많은 단어들을 볼 수 있습니다. 이것은 당신의 원고에서 글자들이 어떤 역할을 하는지, 전자책 리더기에게 어떻게 표현해야 하는지 알려주는 HTML 언어의 기능이나 정보를 지정하는 태그들입니다.
+</p>
 
-  <p>For instance, the HTML code below tells the e-reader that the text <span class="example">Chapter 8</span> is a level 1 Heading:</p>
+  <p>예를 들면, 아래의 HTML 코드는 <span class="example">Chapter 8</span>이 레벨 1에 해당하는 제목이라고 독자들에게 알려줍니다.</p>
 
   <pre class="example">&lt;h1&gt;Chapter 8&lt;/h1&gt;</pre>
 
-  <p>The <span class="example">&lt;h1&gt;</span> tag is the start of the text to be treated like a heading, and the <span class="example">&lt;/h1&gt;</span> tag indicates the end of the text included in the heading. This is what Sigil enters into your document when you click the <img alt="Heading 1 icon." src="../Images/heading-1.png"/> icon. E-readers will typically make the text of a heading larger and center it on the screen.</p>
+  <p><span class="example">&lt;h1&gt;</span> 태그는 제목처럼 처리해야하는 내용의 시작이며, <span class="example">&lt;/h1&gt;</span> 태그는 제목에 포함된 내용의 끝이라는 의미입니다. 여러분이 <img alt="Heading 1 icon." src="../Images/heading-1.png"/> 버튼을 누르면, 시길이 여러분의 원고에 해당 태그를 넣는 방식입니다. 일반적으로 편집자들은 제목의 텍스트를 크게 만들고 화면 중앙에 배치합니다.</p>
 
-  <p>The HTML code below tells the e-reader that the text <span class="example">This is a paragraph</span> is an ordinary paragraph. Since it’s a paragraph the e-reader will apply a certain formatting, perhaps indenting the first line.</p>
+  <p>아래의 HTML 코드는 리더기에게 <span class="example">This is a paragraph</span>이라는 일반적인 문단을 보여주라고 명령할 것입니다. 리더기에서는 이 단락을 특정 형식으로 보여주는데, 아마도 첫줄은 들여쓰기 하여 나타날 것입니다.</p>
 
   <pre class="example">&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre>
 
-  <p>There are many more tags in HTML. The important point to remember is that the HTML tags tell e-readers how to format and display your content. They allow you to keep your content separate from your formatting which makes it easier to change how your book looks.</p>
+  <p>HTML에는 더 많은 태그들이 있습니다. 기억해야 할 중요한 점은 HTML 태그들이 전자책 리더기가 여러분의 원고를 어떤 형식으로 구현하고 표시해야 하는지 알려준다는 것입니다. 이 태그들을 사용하면 내용과 서식을 별도로 유지할 수 있어 책의 모양을 쉽게 변경할 수 있습니다.</p>
 
-  <p>HTML tags can get more fancy since they can include attributes that modify how they are interpreted. For example, here is a paragraph with some tags that define an ID used for linking as shown in the last chapter:</p>
+  <p>HTML 태그들은 속성을 다양하게 수정하여 사용할 수 있기 때문에 더 화려하게 구현될 수 있습니다. 아래와 같이, 마지막 장에 표시된 것처럼 링크 연결에 사용되는 ID를 정의하는 일부 태그를 포함하는 문단과 같은 예가 있습니다</p>
 
   <pre class="example">&lt;p&gt;&lt;span id="note1"&gt;This is a note&lt;/span&gt; for linking.&lt;/p&gt;</pre>
 
-  <p>The span tag is used around small sections of text that need to be formatted differently or to contain information. In this case the information is that the words “This is a note” has an ID of “note1”. The span tags with the ID attribute are the code that Sigil inserts when you use Insert ID.</p>
+  <p><span class="example">&lt;span&gt;</span> 태그는 단락 내 일부 영역에 다른 형식을 지정하거나 정보를 포함해야 하는 글자들에 사용됩니다. 위와 같은 경우, 여러분이 시길에서 ID추가 버튼을 통해 "This is a note"라는 글자들의 영역에 "note1"이라는 ID 속성이 추가된 <span class="example">&lt;span&gt;</span> 태그를 입력한 것입니다.</p>
 
-  <p>These are just a few examples of HTML code, but they give you an idea of what the majority of HTML is all about.</p>
+  <p>HTML 코드의 몇가지 사례에 불과하지만, HTML이 주로 어떤 것에 많이 쓰이는지대한 아이디어를 제공합니다.</p>
 
-  <p>What is important to remember is that in Code View you have access to both your text and the formatting codes that control the look of your book – so you can find and change them.</p>
-
-  <div class="tip">
-    <p class="tiptext">See the <a href="introduction.xhtml">Introduction</a>, <a href="code_view.xhtml">Code View</a> and <a href="tutorial_stylesheets.xhtml">Stylesheets</a> chapters for more details.</p>
-  </div>
-
-  <h3 class="sigil_not_in_toc">Editing in Code View</h3>
-
-  <p>Try changing some of your words (but not the HTML tags just yet), and then watch the changes in Preview.</p>
+  <p>중요하게 기억해야할 점은, 코드 보기에서는 여러분이 원고와 책의 모양이 어떻게 표현될 것인가에 대한 서식 코드들을 모두 볼 수 있으므로, 그것들을 찾고 편집할 수 있습니다.</p>
 
   <div class="tip">
-    <p class="tiptext">It is essential that you edit carefully. You will need to make sure all the tags you use are valid and are opened and closed properly – if they aren’t, you will get a pink error warning in Preview and you will be unable to save your ePub until they are fixed.</p>
+    <p class="tiptext">자세한 내용은 <a href="introduction.xhtml">소개</a>, <a href="code_view.xhtml">코드 보기</a> 장표와 <a href="tutorial_stylesheets.xhtml">스타일시트</a> 장표에서 찾아볼 수 있습니다.</p>
   </div>
 
-  <h3 class="sigil_not_in_toc">Preview</h3>
+  <h3 class="sigil_not_in_toc">코드 보기에서 편집하기</h3>
 
-  <p>To really see changing the code in action, you can open the Preview window using <span class="menuitem">View=&gt;Preview</span> (you can always close it using <span class="menuitem">View=&gt;Preview</span> or its shortcut again). You may need to make the window bigger or drag it to another part of your desktop.</p>
+  <p>HTML 태그는 아직 변경하지 않은채, 원고의 일부 단어들를 변경해 보고, 미리보기 창에서 변경된 내용을 확인해보세요.</p>
 
-  <p>You can type in Code View and Preview will be updated to show your changes after a slight delay.</p>
+  <div class="tip">
+    <p class="tiptext">여러분은 꼭 신중하게 편집해야 합니다. 사용하는 모든 태그가 올바르게 사용되었는지, 제대로 열리고 닫혔는지 확인해야 합니다. 그렇지 않으면 미리보기 창에서 분홍색 오류 경고가 표시되고 올바르게 수정될 때까지 ePub파일을 저장할 수 없습니다.</p>
+  </div>
+
+  <h3 class="sigil_not_in_toc">미리보기</h3>
+
+  <p>코드를 변경하고 실제로 동작하는지 확인하려면 <span class="menuitem">보기=&gt;미리보기</span> 메뉴를 통해 미리보기 창을 열어 확인할 수 있습니다. (<span class="menuitem">보기=&gt;미리보기</span> 메뉴와 단축키 F10을 사용하여 미리보기 창을 닫을 수도 있습니다.) 여러분은 그 창을 더 크게 만들거나 바탕 화면의 다른 부분으로 이동시킬 수도 있습니다.</p>
+
+  <p>코드 보기에서 입력하면, 잠시 후 변경 사항이 미리보기에 반영됩니다.</p>
 
   <div class="image">
-    <img alt="The main Preview window." src="../Images/tutorial-preview.png"/>
+    <img alt="미리보기 창" src="../Images/tutorial-preview.png"/>
   </div>
 
   <div class="tip">
-    <p class="tiptext">Save often to have your code checked for any errors to catch them early.</p>
+    <p class="tiptext">여러분이 작성한 코드를 검사하고 오류를 빠르게 발견하도록 자주 저장하세요.</p>
   </div>
 
 <hr/>
 
-<p id="section1">[1] Many good HTML tutorial sites can be found on the Internet, <a href="https://www.w3schools.com/">W3Schools.com</a> being one.</p>
+<p id="section1">[1] 인터넷에는 좋은 HTML 사용법 안내 사이트가 많이 있습니다. <a href="https://www.w3schools.com/">W3Schools.com</a>이 그 중 하나가 될 수 있습니다.</p>
 </body>
 </html>
